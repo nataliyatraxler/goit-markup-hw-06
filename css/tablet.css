@@ -1,0 +1,147 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  /* header */
+  .open-menu-btn {
+    display: none;
+  }
+
+  .logo {
+    margin-right: 120px;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav-link {
+    color: #2e2f42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #404bbf;
+  }
+
+  .current {
+    position: relative;
+    color: #404bbf;
+  }
+
+  .current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+  }
+
+  .address {
+    display: block;
+    font-style: normal;
+    margin-left: auto;
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .address-link {
+    color: #434455;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .address-link:hover,
+  .address-link:focus {
+    color: #404bbf;
+  }
+  /* hero */
+  .hero{
+    padding: 112px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url('../images/hero-tab-1x.jpg');
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+      .hero {
+          background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+              url(../images/hero-tab-2x.jpg);
+      }
+  }
+.hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+    max-width: 496px;
+}
+.features-items {
+  
+    gap: 72px 24px;
+    flex-direction: row;
+flex-wrap: wrap;
+}
+.feature-item {
+    width: calc((100% - 24px) / 2)
+}
+.feature-title {
+    text-align: left;
+}
+.team-members {
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+   gap: 64px 24px;
+
+
+}
+.portfolio-list {
+  
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  gap: 72px 24px;
+}
+.portfolio-item{
+  width: calc((100% - 24px)/2);
+}
+.footer .container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+  padding-left: 108px;
+  align-items: baseline;
+}
+.footer-logo, .footer-social-text, .subscribe-title {
+ text-align-last: left;
+}
+
+.subscribe-form {
+  flex-direction: row;
+}
+.modal {
+  max-width: 408px;
+  padding: 72px 24px 24px;
+}
+.mob-menu {
+  display: none;
+}
+}
